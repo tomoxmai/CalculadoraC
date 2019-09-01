@@ -10,13 +10,13 @@ using System.Windows.Forms;
 
 namespace CalculadoraC
 {
-    public partial class Form1 : Form
+    public partial class Calculadora : Form
     {
         double primero;
         double segundo;
         double resultado;
         string operacion;
-        public Form1()
+        public Calculadora()
         {
             InitializeComponent();
         }
@@ -139,6 +139,11 @@ namespace CalculadoraC
             primero = double.Parse(pantalla.Text);
             resultado = primero;
             pantalla.Text = Math.Sqrt(primero).ToString();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
